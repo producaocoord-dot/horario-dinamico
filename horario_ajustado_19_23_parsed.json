@@ -1,0 +1,522 @@
+[
+  {
+    "code": "DC5199",
+    "name": "LAB DE ALGORITMOS",
+    "schedules": "Ter 17/19",
+    "prereqs": "",
+    "period": 1,
+    "professor": ""
+  },
+  {
+    "code": "DCC199",
+    "name": "ALGORITMOS",
+    "schedules": "Seg 19/21, Qui 19/21",
+    "prereqs": "",
+    "period": 1,
+    "professor": ""
+  },
+  {
+    "code": "EPD108",
+    "name": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA",
+    "schedules": "Seg 21/23",
+    "prereqs": "",
+    "period": 1,
+    "professor": "Marcos Rodrigues"
+  },
+  {
+    "code": "EPD110",
+    "name": "EXPRESSÃO GRÁFICA I",
+    "schedules": "Ter 21/23",
+    "prereqs": "",
+    "period": 1,
+    "professor": "Romir"
+  },
+  {
+    "code": "EPD130",
+    "name": "INTRODUÇÃO À ENG. DE PRODUÇÃO",
+    "schedules": "Qui 21/23",
+    "prereqs": "",
+    "period": 1,
+    "professor": "Roberta"
+  },
+  {
+    "code": "FIS122",
+    "name": "LAB DE TRANSFORMAÇÕES FÍSICAS",
+    "schedules": "Qui 17/19",
+    "prereqs": "",
+    "period": 1,
+    "professor": ""
+  },
+  {
+    "code": "MAT154",
+    "name": "CÁLCULO I",
+    "schedules": "Qua 19/21, Sex 21/23",
+    "prereqs": "",
+    "period": 1,
+    "professor": ""
+  },
+  {
+    "code": "MAT155",
+    "name": "GEOMETRIA ANALÍTICA",
+    "schedules": "Qua 21/23, Sex 19/21",
+    "prereqs": "",
+    "period": 1,
+    "professor": ""
+  },
+  {
+    "code": "QUI126",
+    "name": "LAB DE ESTRUTURAS QUIMICAS",
+    "schedules": "Ter 19/21",
+    "prereqs": "",
+    "period": 1,
+    "professor": ""
+  },
+  {
+    "code": "EPD111",
+    "name": "TRATAMENTO E ANÁLISE DE DADOS I",
+    "schedules": "Qua 21/23",
+    "prereqs": "DCC199",
+    "period": 2,
+    "professor": "Romir"
+  },
+  {
+    "code": "EXT194",
+    "name": "EXTENSIONISTA 3º SETOR",
+    "schedules": "Sab 19/21",
+    "prereqs": "EPD130",
+    "period": 2,
+    "professor": ""
+  },
+  {
+    "code": "FIS073",
+    "name": "FÍSICA I",
+    "schedules": "Ter 19/21, Qui 19/21",
+    "prereqs": "MAT154",
+    "period": 2,
+    "professor": ""
+  },
+  {
+    "code": "FIS077",
+    "name": "LAB DE FÍSICA I",
+    "schedules": "Seg 19/21",
+    "prereqs": "",
+    "period": 2,
+    "professor": ""
+  },
+  {
+    "code": "MAT156",
+    "name": "CÁLCULO II",
+    "schedules": "Qua 19/21, Sex 21/23",
+    "prereqs": "MAT155, MAT154",
+    "period": 2,
+    "professor": ""
+  },
+  {
+    "code": "MAT158",
+    "name": "ÁLGEBRA LINEAR",
+    "schedules": "Ter 21/23, Sex 19/21",
+    "prereqs": "MAT155",
+    "period": 2,
+    "professor": ""
+  },
+  {
+    "code": "QUI125",
+    "name": "QUÍMICA",
+    "schedules": "Seg 21/23, Qui 21/23",
+    "prereqs": "",
+    "period": 2,
+    "professor": ""
+  },
+  {
+    "code": "CAD014",
+    "name": "ADM. E ORGANIZAÇÃO DE EMPRESAS",
+    "schedules": "Seg 19/21, Seg 21/23",
+    "prereqs": "",
+    "period": 3,
+    "professor": ""
+  },
+  {
+    "code": "EPD115",
+    "name": "TRATAMENTO E ANÁLISE DE DADOS II",
+    "schedules": "Sex 19/21",
+    "prereqs": "EPD111",
+    "period": 3,
+    "professor": "Romir"
+  },
+  {
+    "code": "EST028",
+    "name": "INTRODUÇÃO À ESTATÍSTICA",
+    "schedules": "Ter 21/23, Qui 21/23",
+    "prereqs": "",
+    "period": 3,
+    "professor": ""
+  },
+  {
+    "code": "FIS074",
+    "name": "FÍSICA II",
+    "schedules": "Ter 19/21, Qui 19/21",
+    "prereqs": "MAT154, FIS073",
+    "period": 3,
+    "professor": ""
+  },
+  {
+    "code": "FIS078",
+    "name": "LAB DE FÍSICA II",
+    "schedules": "Qua 21/23",
+    "prereqs": "FIS077, FIS073",
+    "period": 3,
+    "professor": ""
+  },
+  {
+    "code": "MAT157",
+    "name": "CÁLCULO III",
+    "schedules": "Qua 19/21, Sex 21/23",
+    "prereqs": "MAT156",
+    "period": 3,
+    "professor": ""
+  },
+  {
+    "code": "DCC008",
+    "name": "CÁLCULO NUMÉRICO",
+    "schedules": "Seg 21/23, Qui 21/23",
+    "prereqs": "DCC199, MAT154, MAT158",
+    "period": 4,
+    "professor": ""
+  },
+  {
+    "code": "EPD075",
+    "name": "ORGANIZAÇÃO DO TRABALHO E PRODUÇÃO",
+    "schedules": "Seg 19/21, Qua 19/21",
+    "prereqs": "CAD014",
+    "period": 4,
+    "professor": "Eduardo"
+  },
+  {
+    "code": "EPD116",
+    "name": "TRATAMENTO E ANÁLISE DE DADOS III",
+    "schedules": "Ter 21/23",
+    "prereqs": "EPD115, EST028",
+    "period": 4,
+    "professor": "Mariana"
+  },
+  {
+    "code": "FIS075",
+    "name": "FÍSICA III",
+    "schedules": "Ter 19/21, Qui 19/21",
+    "prereqs": "MAT156, FIS073",
+    "period": 4,
+    "professor": ""
+  },
+  {
+    "code": "MAT029",
+    "name": "EQUAÇÕES DIFERENCIAIS I",
+    "schedules": "Qua 21/23, Sex 19/21",
+    "prereqs": "MAT156",
+    "period": 4,
+    "professor": ""
+  },
+  {
+    "code": "ENE077",
+    "name": "ENERGIA E ELETRICIDADE",
+    "schedules": "Qua 17/19, Qui 17/19",
+    "prereqs": "FIS075",
+    "period": 5,
+    "professor": ""
+  },
+  {
+    "code": "EPD010",
+    "name": "ENGENHARIA DE MATERIAIS",
+    "schedules": "Qui 21/23, Ter 21/23",
+    "prereqs": "QUI125, QUI126",
+    "period": 5,
+    "professor": ""
+  },
+  {
+    "code": "EPD059",
+    "name": "GESTÃO DO PROJETO",
+    "schedules": "Seg 21/23",
+    "prereqs": "EPD075",
+    "period": 5,
+    "professor": "Roberta"
+  },
+  {
+    "code": "EPD067",
+    "name": "ENGENHARIA DA QUALIDADE I",
+    "schedules": "Ter 19/21, Qua 21/23",
+    "prereqs": "CAD014",
+    "period": 5,
+    "professor": "Clarice"
+  },
+  {
+    "code": "EPD114",
+    "name": "EXPRESSÃO GRÁFICA II",
+    "schedules": "Sex 19/21",
+    "prereqs": "EPD110",
+    "period": 5,
+    "professor": "Marcos Borges"
+  },
+  {
+    "code": "EST061",
+    "name": "ESTATÍSTICA APLICADA À ENGENHARIA I",
+    "schedules": "Seg 17/19, Qui 19/21",
+    "prereqs": "EST028",
+    "period": 5,
+    "professor": ""
+  },
+  {
+    "code": "EXT196",
+    "name": "INTEGRAÇÃO E DISSEMINAÇÃO DO CONHECIMENTO",
+    "schedules": "Sab 19/21",
+    "prereqs": "EXT194",
+    "period": 5,
+    "professor": ""
+  },
+  {
+    "code": "FIS081",
+    "name": "FENÔMENOS DE TRANSPORTE",
+    "schedules": "Seg 19/21, Qua 19/21",
+    "prereqs": "FIS074, MAT157",
+    "period": 5,
+    "professor": ""
+  },
+  {
+    "code": "EPD026",
+    "name": "PLANEJAMENTO ESTRATÉGICO",
+    "schedules": "Seg 21/23, Ter 21/23",
+    "prereqs": "EPD075",
+    "period": 6,
+    "professor": "Luiz"
+  },
+  {
+    "code": "EPD065",
+    "name": "ENGENHARIA DA SUSTENTABILIDADE I",
+    "schedules": "Qua 21/23, Sex 17/19",
+    "prereqs": "CAD014",
+    "period": 6,
+    "professor": "Bruno"
+  },
+  {
+    "code": "EPD074",
+    "name": "PROCESSOS PRODUTIVOS",
+    "schedules": "Seg 19/21, Qui 21/23",
+    "prereqs": "ENE077, EPD075, EPD010",
+    "period": 6,
+    "professor": "Marcio"
+  },
+  {
+    "code": "EPD099",
+    "name": "PESQUISA OPERACIONAL I",
+    "schedules": "Ter 19/21, Sex 19/21",
+    "prereqs": "MAT029, DCC008",
+    "period": 6,
+    "professor": "Fernando"
+  },
+  {
+    "code": "EPD117",
+    "name": "ENGENHARIA DE PRODUTO",
+    "schedules": "Qui 19/21, Qua 19/21",
+    "prereqs": "EPD059",
+    "period": 6,
+    "professor": "Roberta"
+  },
+  {
+    "code": "MAC015",
+    "name": "RESISTÊNCIA DOS MATERIAIS",
+    "schedules": "Seg 17/19, Qua 17/19",
+    "prereqs": "MAT029",
+    "period": 6,
+    "professor": ""
+  },
+  {
+    "code": "EPD057",
+    "name": "ERGONOMIA",
+    "schedules": "Ter 21/23, Qui 21/23",
+    "prereqs": "EPD075",
+    "period": 7,
+    "professor": "Eduardo"
+  },
+  {
+    "code": "EPD080",
+    "name": "PLANEJAMENTO E CONTROLE DA PRODUÇÃO I",
+    "schedules": "Ter 19/21, Sex 19/21",
+    "prereqs": "EPD074",
+    "period": 7,
+    "professor": "Picorone"
+  },
+  {
+    "code": "EPD100",
+    "name": "PESQUISA OPERACIONAL II",
+    "schedules": "Seg 21/23, Qui 19/21",
+    "prereqs": "EPD099",
+    "period": 7,
+    "professor": "Fernando"
+  },
+  {
+    "code": "EPD112",
+    "name": "PROCESSOS DE FABRICAÇÃO",
+    "schedules": "Seg 19/21",
+    "prereqs": "EPD117",
+    "period": 7,
+    "professor": "Marcos Borges"
+  },
+  {
+    "code": "EXT195",
+    "name": "CAPACITAÇÃO E TREINAMENTO EM EP",
+    "schedules": "Sab 19/21",
+    "prereqs": "EXT196",
+    "period": 7,
+    "professor": ""
+  },
+  {
+    "code": "FIN013",
+    "name": "GESTÃO FINANCEIRA I",
+    "schedules": "Qua 19/21, Qui 17/19",
+    "prereqs": "EST028",
+    "period": 7,
+    "professor": ""
+  },
+  {
+    "code": "EPD076",
+    "name": "PLANEJAMENTO E CONTROLE DA PRODUÇÃO II",
+    "schedules": "Ter 21/23, Sex 17/19",
+    "prereqs": "EPD099, EPD080",
+    "period": 8,
+    "professor": "Marcio"
+  },
+  {
+    "code": "EPD101",
+    "name": "ENGENHARIA ECONÔMICA I",
+    "schedules": "Seg 21/23, Ter 19/21",
+    "prereqs": "EST061, MAT154",
+    "period": 8,
+    "professor": "Cristina"
+  },
+  {
+    "code": "EPD104",
+    "name": "ENGENHARIA DA SUSTENTABILIDADE II",
+    "schedules": "Qui 19/21",
+    "prereqs": "EPD065, EPD026",
+    "period": 8,
+    "professor": "Bruno"
+  },
+  {
+    "code": "EPD129",
+    "name": "GESTÃO DA TECNOLOGIA E INOVAÇÃO",
+    "schedules": "Sex 19/21",
+    "prereqs": "EPD117",
+    "period": 8,
+    "professor": "Mariana"
+  },
+  {
+    "code": "ESA011",
+    "name": "FUND. DE SEGURANÇA NO TRABALHO",
+    "schedules": "Qua 19/21, Qui 21/23",
+    "prereqs": "EPD065",
+    "period": 8,
+    "professor": ""
+  },
+  {
+    "code": "FIN014",
+    "name": "GESTÃO FINANCEIRA II",
+    "schedules": "Seg 19/21, Qua 21/23",
+    "prereqs": "FIN013",
+    "period": 8,
+    "professor": ""
+  },
+  {
+    "code": "EPD030",
+    "name": "AUTOMAÇÃO DA PRODUÇÃO",
+    "schedules": "Qua 21/23, Qui 21/23",
+    "prereqs": "EPD116, ENE077",
+    "period": 9,
+    "professor": ""
+  },
+  {
+    "code": "EPD053",
+    "name": "EMPREENDEDORISMO",
+    "schedules": "Ter 19/21",
+    "prereqs": "EPD129",
+    "period": 9,
+    "professor": "Mariana"
+  },
+  {
+    "code": "EPD068",
+    "name": "ENGENHARIA DA QUALIDADE II",
+    "schedules": "Ter 21/23, Qua 19/21",
+    "prereqs": "EST061, EPD067",
+    "period": 9,
+    "professor": "Clarice"
+  },
+  {
+    "code": "EPD069",
+    "name": "LOGÍSTICA I",
+    "schedules": "Seg 19/21, Qui 19/21",
+    "prereqs": "EPD099, EST061",
+    "period": 9,
+    "professor": "Roberto"
+  },
+  {
+    "code": "EPD102",
+    "name": "ENGENHARIA ECONÔMICA II",
+    "schedules": "Sex 19/21, Sex 17/19",
+    "prereqs": "EPD101, FIN014",
+    "period": 9,
+    "professor": "Cristina"
+  },
+  {
+    "code": "EPD113",
+    "name": "PROTOTIPAGEM VIRTUAL",
+    "schedules": "Seg 21/23",
+    "prereqs": "EPD114",
+    "period": 9,
+    "professor": "Marcos Borges"
+  },
+  {
+    "code": "EP5112",
+    "name": "LAB DE PROCESSOS DE FABRICAÇÃO",
+    "schedules": "Qua 21/23",
+    "prereqs": "",
+    "period": 10,
+    "professor": "Marcos Borges"
+  },
+  {
+    "code": "EPD070",
+    "name": "LOGÍSTICA II",
+    "schedules": "Seg 21/23, Ter 19/21",
+    "prereqs": "EPD069",
+    "period": 10,
+    "professor": "Roberto"
+  },
+  {
+    "code": "EPD097",
+    "name": "ENGENHARIA E SOCIEDADE",
+    "schedules": "Seg 19/21",
+    "prereqs": "MAT029",
+    "period": 10,
+    "professor": "Marcos Rodrigues"
+  },
+  {
+    "code": "EPD103",
+    "name": "REDES DE PRODUÇÃO",
+    "schedules": "Qua 19/21",
+    "prereqs": "EPD065, EPD026",
+    "period": 10,
+    "professor": "Bruno"
+  },
+  {
+    "code": "EPD106",
+    "name": "GESTÃO DE MANUTENÇÕES",
+    "schedules": "Qui 21/23, Sex 19/21",
+    "prereqs": "EPD010",
+    "period": 10,
+    "professor": "Luiz"
+  },
+  {
+    "code": "EPD119",
+    "name": "PLANEJAMENTO DE INSTALAÇÕES",
+    "schedules": "Ter 21/23, Qui 19/21",
+    "prereqs": "EPD099, EPD080",
+    "period": 10,
+    "professor": "Picorone"
+  }
+]

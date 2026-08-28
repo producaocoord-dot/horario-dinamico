@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horário Dinâmico EPD - Engenharia de Produção</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SheetJS Library for Excel Export/Import -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Horário Dinâmico EPD</h1>
+          <p>Departamento de Engenharia de Produção</p>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <!-- Preset Switcher -->
+        <div class="preset-group">
+          <button class="preset-btn active" id="preset-ajustado-btn" onclick="switchPreset('ajustado')">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Ajustado (IA)
+          </button>
+          <button class="preset-btn" id="preset-original-btn" onclick="switchPreset('original')">
+            <i class="fa-solid fa-file-excel"></i> Original 2026.3
+          </button>
+        </div>
+
+        <!-- Action Buttons -->
+        <button class="btn" onclick="undo()" title="Desfazer (Ctrl+Z)">
+          <i class="fa-solid fa-rotate-left"></i> Desfazer
+        </button>
+        <button class="btn" onclick="redo()" title="Refazer (Ctrl+Y)">
+          <i class="fa-solid fa-rotate-right"></i> Refazer
+        </button>
+        
+        <button class="btn btn-primary" onclick="openConstraintManager()">
+          <i class="fa-solid fa-user-gear"></i> Restrições de Docentes
+        </button>
+
+        <button class="btn" onclick="exportToExcel()">
+          <i class="fa-solid fa-file-export"></i> Exportar Excel
+        </button>
+
+        <button class="btn" onclick="openAddCourseModal()">
+          <i class="fa-solid fa-plus"></i> Nova Disciplina
+        </button>
+
+        <button class="btn btn-danger" onclick="confirmResetSchedule()" title="Restaurar Padrão">
+          <i class="fa-solid fa-trash-arrow-up"></i> Redefinir
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle-btn" onclick="toggleTheme()" title="Alternar Tema">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- KPI Banner & Filter Bar -->
+  <div class="sub-bar">
+    <div class="sub-container">
+      
+      <!-- Real-time Audit KPI Badges -->
+      <div class="kpi-row">
+        <div class="kpi-badge danger" title="Disciplinas do mesmo professor alocadas no mesmo horário">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span>Conflito Docente:</span>
+          <span class="count" id="kpi-teacher-conflicts">0</span>
+        </div>
+
+        <div class="kpi-badge warning" title="Disciplinas em período anterior ou igual ao pré-requisito">
+          <i class="fa-solid fa-code-fork"></i>
+          <span>Violação Pré-req:</span>
+          <span class="count" id="kpi-prereq-violations">0</span>
+        </div>
+
+        <div class="kpi-badge warning" title="Disciplinas EPD alocadas no turno 17/19">
+          <i class="fa-solid fa-clock"></i>
+          <span>EPD em 17/19:</span>
+          <span class="count" id="kpi-1719-count">0</span>
+        </div>
+
+        <div class="kpi-badge success">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Total Alocado:</span>
+          <span class="count" id="kpi-total-slots">0</span>
+        </div>
+      </div>
+
+      <!-- Filters & View Switcher -->
+      <div class="filters-row">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="search-input" placeholder="Buscar por código, nome ou professor..." oninput="handleSearchFilter()">
+        </div>
+
+        <select class="select-filter" id="dept-filter" onchange="handleSearchFilter()">
+          <option value="ALL">Todos os Departamentos</option>
+          <option value="EPD">EPD (Eng. Produção)</option>
+          <option value="MAT">MAT (Matemática)</option>
+          <option value="FIS">FIS (Física)</option>
+          <option value="QUI">QUI (Química)</option>
+          <option value="DCC">DCC (Computação)</option>
+          <option value="MAC">MAC (Mecânica/Materiais)</option>
+          <option value="ENE">ENE (Elétrica)</option>
+          <option value="MEC">MEC (Mecânica)</option>
+          <option value="FIN">FIN (Finanças)</option>
+          <option value="ESA">ESA (Eng. Sanitária)</option>
+          <option value="CAD">CAD (Administração)</option>
+          <option value="EST">EST (Estatística)</option>
+          <option value="EXT">EXT (Extensão)</option>
+        </select>
+
+        <select class="select-filter" id="prof-filter" onchange="handleSearchFilter()">
+          <option value="ALL">Todos os Professores</option>
+        </select>
+
+        <div class="view-tabs">
+          <button class="tab-btn active" id="tab-grid" onclick="switchView('grid')">
+            <i class="fa-solid fa-table-cells"></i> Grade 2026.3
+          </button>
+          <button class="tab-btn" id="tab-prof" onclick="switchView('prof')">
+            <i class="fa-solid fa-user-doctor"></i> Por Professor
+          </button>
+          <button class="tab-btn" id="tab-list" onclick="switchView('list')">
+            <i class="fa-solid fa-list-check"></i> Tabela Geral
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Workspace Area -->
+  <main class="main-container" id="main-content">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <!-- MODAL 1: Gestor Dinâmico de Restrições de Docentes -->
+  <div class="modal-overlay" id="modal-constraint-manager">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fa-solid fa-user-gear"></i> Gestor Dinâmico de Restrições de Docentes</h2>
+        <button class="close-btn" onclick="closeModal('modal-constraint-manager')">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Configure os dias de disponibilidade permitidos para cada professor. Se a restrição de um docente mudar, atualize aqui e o aplicativo recalculará os alertas de conflito em tempo real.
+        </p>
+
+        <div id="teachers-list-container">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+          <h3 style="font-size: 0.95rem; margin-bottom: 0.75rem;"><i class="fa-solid fa-user-plus"></i> Adicionar Novo Docente</h3>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="new-teacher-name" class="form-control" placeholder="Nome do Professor (ex: Prof. Carlos)">
+            <button class="btn btn-primary" onclick="addNewTeacher()">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('modal-constraint-manager')">Fechar</button>
+        <button class="btn btn-primary" onclick="saveTeacherConstraints()">Salvar & Recalcular</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Editar Disciplina -->
+  <div class="modal-overlay" id="modal-edit-course">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fa-solid fa-pen-to-square"></i> Editar Disciplina</h2>
+        <button class="close-btn" onclick="closeModal('modal-edit-course')">&times;</button>
+      </div>
+      
+      <form id="edit-course-form" onsubmit="saveCourseEdit(event)">
+        <input type="hidden" id="edit-slot-id">
+        
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem;">
+          <div class="form-group">
+            <label>Código</label>
+            <input type="text" id="edit-code" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Nome da Disciplina</label>
+            <input type="text" id="edit-name" class="form-control" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label>Departamento</label>
+            <input type="text" id="edit-dept" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Período</label>
+            <select id="edit-period" class="form-control">
+              <option value="1">Período 1</option>
+              <option value="2">Período 2</option>
+              <option value="3">Período 3</option>
+              <option value="4">Período 4</option>
+              <option value="5">Período 5</option>
+              <option value="6">Período 6</option>
+              <option value="7">Período 7</option>
+              <option value="8">Período 8</option>
+              <option value="9">Período 9</option>
+              <option value="10">Período 10</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Professor Responsável</label>
+            <select id="edit-professor" class="form-control">
+              <option value="">(Sem Professor EPD)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label>Dia da Semana</label>
+            <select id="edit-day" class="form-control">
+              <option value="Segunda">Segunda-feira</option>
+              <option value="Terça">Terça-feira</option>
+              <option value="Quarta">Quarta-feira</option>
+              <option value="Quinta">Quinta-feira</option>
+              <option value="Sexta">Sexta-feira</option>
+              <option value="Sábado">Sábado</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Turno / Horário</label>
+            <select id="edit-slot" class="form-control">
+              <option value="17/19">17/19 (17:00 às 19:00)</option>
+              <option value="19/21">19/21 (19:00 às 21:00)</option>
+              <option value="21/23">21/23 (21:00 às 23:00)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pré-requisitos (separados por vírgula)</label>
+          <input type="text" id="edit-prereqs" class="form-control" placeholder="ex: DCC199, MAT154">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" onclick="deleteCurrentCourse()">Excluir Disciplina</button>
+          <button type="button" class="btn" onclick="closeModal('modal-edit-course')">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Data and Main Logic Scripts -->
+  <script src="horario_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

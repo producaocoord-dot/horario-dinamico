@@ -1,0 +1,638 @@
+[
+  {
+    "period": 1,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "Introdução a EPD e ACE - EPD130 (4265) e (5102.)"
+  },
+  {
+    "period": 1,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Algoritmos Prática DC5199D"
+  },
+  {
+    "period": 1,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Algoritmos - DCC199"
+  },
+  {
+    "period": 1,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Laboratório de Química - QUI126E"
+  },
+  {
+    "period": 1,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Cálculo I - MAT154"
+  },
+  {
+    "period": 1,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Algoritmos - DCC199"
+  },
+  {
+    "period": 1,
+    "slot": "19/21",
+    "day": "Sexta",
+    "text": "Geometria Analítica - MAT155"
+  },
+  {
+    "period": 1,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Laboratório de Ciências Físicas - FIS122 B"
+  },
+  {
+    "period": 1,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Geometria Analítica - MAT155"
+  },
+  {
+    "period": 1,
+    "slot": "21/23",
+    "day": "Sexta",
+    "text": "Cálculo I - MAT154"
+  },
+  {
+    "period": 2,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "Tratamento e Análise de Dados I A - EPD111 (LTI 3)"
+  },
+  {
+    "period": 2,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Expressão Gráfica I - EPD110 (LTI 3)"
+  },
+  {
+    "period": 2,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "Laboratório de Física I - FIS077"
+  },
+  {
+    "period": 2,
+    "slot": "17/19",
+    "day": "Sexta",
+    "text": "EXT194 -Interface da EP com Terceiro Setor (4265)"
+  },
+  {
+    "period": 2,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Tratamento e Análise de Dados  I B - EPD111 (LTI 3)"
+  },
+  {
+    "period": 2,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Física I - FIS073"
+  },
+  {
+    "period": 2,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Cálculo II - MAT156"
+  },
+  {
+    "period": 2,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Física I - FIS073"
+  },
+  {
+    "period": 2,
+    "slot": "19/21",
+    "day": "Sexta",
+    "text": "Álgebra Linear - MAT158"
+  },
+  {
+    "period": 2,
+    "slot": "21/23",
+    "day": "Segunda",
+    "text": "Química Fundamental - QUI125"
+  },
+  {
+    "period": 2,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Álgebra Linear - MAT158"
+  },
+  {
+    "period": 2,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "Química Fundamental - QUI125"
+  },
+  {
+    "period": 2,
+    "slot": "21/23",
+    "day": "Sexta",
+    "text": "Cálculo II - MAT156"
+  },
+  {
+    "period": 3,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "Adm. Org Emp -\nCAD014 (4118)"
+  },
+  {
+    "period": 3,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Adm. Org Emp -\nCAD014 (4118)"
+  },
+  {
+    "period": 3,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "Expressão Gráfica II - EPD114 (LTI 2)"
+  },
+  {
+    "period": 3,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Física II - FIS074"
+  },
+  {
+    "period": 3,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Cálculo III -\nMAT157"
+  },
+  {
+    "period": 3,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Física II - FIS074"
+  },
+  {
+    "period": 3,
+    "slot": "21/23",
+    "day": "Segunda",
+    "text": "Tratamento e Análise de Dados II - EPD115 (LTI 3)"
+  },
+  {
+    "period": 3,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Intr. Estatística -\nEST028"
+  },
+  {
+    "period": 3,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Lab. Física II -\nFIS078"
+  },
+  {
+    "period": 3,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "Intr. Estatística -\nEST028"
+  },
+  {
+    "period": 3,
+    "slot": "21/23",
+    "day": "Sexta",
+    "text": "Cálculo III -\nMAT157"
+  },
+  {
+    "period": 4,
+    "slot": "17/19",
+    "day": "Quinta",
+    "text": "Organização do Trabalho - EPD075 (4267)"
+  },
+  {
+    "period": 4,
+    "slot": "17/19",
+    "day": "Sexta",
+    "text": "Eng. Sustent. I\nEPD065 (5102)"
+  },
+  {
+    "period": 4,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Organização do Trabalho - EPD075 (4267)"
+  },
+  {
+    "period": 4,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Física III\nFIS075"
+  },
+  {
+    "period": 4,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Eng. Sustent. I\nEPD065 (5102)"
+  },
+  {
+    "period": 4,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Física III\nFIS075"
+  },
+  {
+    "period": 4,
+    "slot": "19/21",
+    "day": "Sexta",
+    "text": "Eq. Diferenciais I\nMAT029"
+  },
+  {
+    "period": 4,
+    "slot": "21/23",
+    "day": "Segunda",
+    "text": "Cálc. Numérico\nDCC008"
+  },
+  {
+    "period": 4,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Tratamento e Análise de Dados III - EPD116 (5134)"
+  },
+  {
+    "period": 4,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Eq. Diferenciais I\nMAT029"
+  },
+  {
+    "period": 4,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "Cálc. Numérico\nDCC008"
+  },
+  {
+    "period": 5,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "Estatíst. Aplic.\nEST061 (5217)"
+  },
+  {
+    "period": 5,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Top dos Materiais\nMEC077 (4148)"
+  },
+  {
+    "period": 5,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "Energ. Eletr.\nENE077 (5217)"
+  },
+  {
+    "period": 5,
+    "slot": "17/19",
+    "day": "Quinta",
+    "text": "Energ. Eletr.\nENE077 (5217)"
+  },
+  {
+    "period": 5,
+    "slot": "17/19",
+    "day": "Sexta",
+    "text": "EXT0196 - Int e Dissemin do Conhec em EP (5134)"
+  },
+  {
+    "period": 5,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Fenômenos dos Transportes - FIS081"
+  },
+  {
+    "period": 5,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Eng. Qualidade I\nEPD067 (4265)"
+  },
+  {
+    "period": 5,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Fenômenos dos Transportes - FIS081"
+  },
+  {
+    "period": 5,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Estatíst. Aplic.\nEST061 (5217)"
+  },
+  {
+    "period": 5,
+    "slot": "21/23",
+    "day": "Segunda",
+    "text": "Gest. Projeto\nEPD059 (4265)"
+  },
+  {
+    "period": 5,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Top dos Materiais\nMEC077 (4148)"
+  },
+  {
+    "period": 5,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "Eng. Qualidade I\nEPD067 (4265)"
+  },
+  {
+    "period": 6,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "Res Materiais\nMAC015 (4148 A3)"
+  },
+  {
+    "period": 6,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Eng. Qualidade II - EPD068 (4265)"
+  },
+  {
+    "period": 6,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "Res Materiais\nMAC015 (4148 A3)"
+  },
+  {
+    "period": 6,
+    "slot": "17/19",
+    "day": "Quinta",
+    "text": "Engenharia do Produto - EPD117 (4265)"
+  },
+  {
+    "period": 6,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Proc. Produtivo \nEPD074 (5110)"
+  },
+  {
+    "period": 6,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "PO 1\nEPD099 (5102)"
+  },
+  {
+    "period": 6,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Planej. Estratégico\nEPD026 (5134)"
+  },
+  {
+    "period": 6,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Eng. Qualidade II - EPD068 (LTI 3)"
+  },
+  {
+    "period": 6,
+    "slot": "19/21",
+    "day": "Sexta",
+    "text": "Engenharia do Produto - EPD117 (4265)"
+  },
+  {
+    "period": 6,
+    "slot": "21/23",
+    "day": "Segunda",
+    "text": "Planej. Estratégico\nEPD026 (5134)"
+  },
+  {
+    "period": 6,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Proc. Produtivo \nEPD074 (5110)"
+  },
+  {
+    "period": 6,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "PO 1\nEPD099 (5102)"
+  },
+  {
+    "period": 7,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "Ergonomia\nEPD057 (4267)"
+  },
+  {
+    "period": 7,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Processos de Fabricação      EP5112 (LTI 2)"
+  },
+  {
+    "period": 7,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "EXT195 - Capacitação e Treinamento em EP (4265)"
+  },
+  {
+    "period": 7,
+    "slot": "17/19",
+    "day": "Quinta",
+    "text": "Gest Fin. EP I\nFIN013 (5110 e LTI 2)"
+  },
+  {
+    "period": 7,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Processos de Fabricação      EPD112 (5102)"
+  },
+  {
+    "period": 7,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "PCP I\nEPD080 (5109)"
+  },
+  {
+    "period": 7,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Gest Fin. EP I\nFIN013 (5110 e LTI 2)"
+  },
+  {
+    "period": 7,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "PO 2\nEPD100 (5101)"
+  },
+  {
+    "period": 7,
+    "slot": "19/21",
+    "day": "Sexta",
+    "text": "PCP I\nEPD080 (5109)"
+  },
+  {
+    "period": 7,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "PO 2\nEPD100 (5101)"
+  },
+  {
+    "period": 7,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Ergonomia\nEPD057 (4267)"
+  },
+  {
+    "period": 7,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "Prototipagem Virtual EPD 113 (LTI 2)"
+  },
+  {
+    "period": 8,
+    "slot": "17/19",
+    "day": "Segunda",
+    "text": "PCP II\nEPD076 (5101)"
+  },
+  {
+    "period": 8,
+    "slot": "17/19",
+    "day": "Terça",
+    "text": "Eng. Econômica I\nEPD101 (5109)"
+  },
+  {
+    "period": 8,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "Metodologia Cient e Tec e Qualify - EPD108 (5101)"
+  },
+  {
+    "period": 8,
+    "slot": "17/19",
+    "day": "Quinta",
+    "text": "Eng. Econômica I\nEPD101 (5134 / LTI 3)"
+  },
+  {
+    "period": 8,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Gest Fin. EP II\nFIN014 (5217 e LTI 2)"
+  },
+  {
+    "period": 8,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Fund. Seg Trab.\nESA011  (5217)"
+  },
+  {
+    "period": 8,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "PCP II\nEPD076 (5101)"
+  },
+  {
+    "period": 8,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Eng Sustentabilidade II - EPD104 (5109)"
+  },
+  {
+    "period": 8,
+    "slot": "19/21",
+    "day": "Sexta",
+    "text": "Gestão da Tec e Inovação - EPD129 (5134)"
+  },
+  {
+    "period": 8,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Engenharia e Sociedade EPD097 (5110)"
+  },
+  {
+    "period": 8,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Gest Fin. EP II\nFIN014 (5217 e LTI 2)"
+  },
+  {
+    "period": 9,
+    "slot": "17/19",
+    "day": "Quinta",
+    "text": "Logística I\nEPD069 (5101)"
+  },
+  {
+    "period": 9,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Logística I\nEPD069 (5101)"
+  },
+  {
+    "period": 9,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Empreendedorismo\nEPD053 (5134)"
+  },
+  {
+    "period": 9,
+    "slot": "19/21",
+    "day": "Quarta",
+    "text": "Automação\nMEC076 (LAB AUTO)"
+  },
+  {
+    "period": 9,
+    "slot": "19/21",
+    "day": "Quinta",
+    "text": "Eng. Econômica II\nEPD102 (5102 e LTI 2)"
+  },
+  {
+    "period": 9,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Eng. Econômica II\nEPD102 (5102 e LTI 3)"
+  },
+  {
+    "period": 9,
+    "slot": "21/23",
+    "day": "Quarta",
+    "text": "Automação\nMEC076 (LAB AUTO)"
+  },
+  {
+    "period": 9,
+    "slot": "21/23",
+    "day": "Quinta",
+    "text": "Redes de Produção\nEPD103 (5134)"
+  },
+  {
+    "period": 10,
+    "slot": "17/19",
+    "day": "Quarta",
+    "text": "Gestão da Manutenção - EPD106 (5134)"
+  },
+  {
+    "period": 10,
+    "slot": "17/19",
+    "day": "Sexta",
+    "text": "Planej. de Instalações EPD119 (5109)"
+  },
+  {
+    "period": 10,
+    "slot": "19/21",
+    "day": "Segunda",
+    "text": "Gestão da Manutenção - EPD106 (5134)"
+  },
+  {
+    "period": 10,
+    "slot": "19/21",
+    "day": "Terça",
+    "text": "Logística II\nEPD070 (5101)"
+  },
+  {
+    "period": 10,
+    "slot": "21/23",
+    "day": "Segunda",
+    "text": "Logística II\nEPD070 (5101)"
+  },
+  {
+    "period": 10,
+    "slot": "21/23",
+    "day": "Terça",
+    "text": "Planej. de Instalações \nEPD119 (5109)"
+  }
+]
